@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@500&family=Langar&family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+.section-1{
+    height: 100vh;
+    width: 100%;
+}
+
+.section-1 .one .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 20px 0;
+    z-index: 10;
+}
+
+.section-1 .one .header i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.section-1 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.section-1 .one .text-content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+}
+
+.section-1 .one .text-content .head h1{
+    font-size: 6.8vw;
+    font-weight: 700;
+    line-height: 7rem;
+}
+
+.section-1 .one .text-content .head h1 span{
+    color: yellow;
+}
+
+/* CURSOR */
+.cursor{
+    height: 18px;
+    width: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: yellow;
+    z-index: 80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* --------------------section-2-------------------------- */
+
+.section-2{
+    min-height: 100vh;
+    width: 100%;
+}
+.section-2 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* -----------------section-3------------------- */
+
+.section-3{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-3 .three{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.section-3 .three .left,
+.section-3 .three .right{
+    height: 100%;
+    width: 100%;
+}
+
+.section-3 .three .left video{
+    width: 80%;
+    height: 70%;
+    
+}
+
+.section-3 .three .right h1{
+    margin: 30px 0;
+    font-weight: 500;
+ 
+}
+
+
+.section-4{
+    min-height: 200vh;
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.section-4 .servies{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    transition: 1s;
+}
+
+.section-4 .servies:hover{
+    background-color: #333;
+}
+.section-4 .servies:hover h5{
+   
+    color: #CCC;
+}
+
+.section-4 .four .moving-text .text{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin: 50px 0;
+}
+
+.section-4 .four .moving-text .text .first{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: move 5s linear infinite;
+}
+
+.section-4 .four .moving-text .text .first video{
+    height: 150px;
+    width: 150px;
+    margin: 0 50px;
+  
+}
+.section-4 .four .moving-text .text .first  h1{
+    text-transform: uppercase;
+    font-size: 6vw;
+   
+} 
+
+@keyframes move {
+    to{
+        transform: translateX(0);
+    }
+    from{
+        transform: translateX(-100%);
+    }
+} 
+
+
+.section-4 .four .projects{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
+}
+.section-4 .four .projects .bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+}
+.section-4 .four .projects .bg::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+.section-4 .four .projects .bg video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.section-4 .four .projects .first-project .first{
+    margin: 100px 0;
+    padding: 40px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-4 .four .projects .first-project .first .about{
+   display: flex;
+   position: absolute;
+    opacity: 0;
+   
+   
+}
+.section-4 .four .projects .first-project .first .about h4{
+    margin: 0 30px;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    
+  
+    transform: translateY(20px);
+    transition: all ease 1s;
+   
+}
+
+/* __________________section-5____________________ */
+
+.section-5{
+    height: 100vh;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-5 .five{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.section-5 .five .left,
+.section-5 .five .right{
+    height: 100%;
+    width: 100%;
+    margin-left: 100px;
+}
+
+.section-5 .five .right video{
+    height: 90%;
+    width: 90%;
+}
+
+.section-5 .five .left .one{
+    overflow: hidden;
+    margin: 50px 0;
+}
+
+.section-5 .five .left h1{
+    font-size: 2.5vw;
+}
+
